@@ -1,9 +1,9 @@
 webpackJsonp([2,4],{
 
-/***/ 143:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -15,10 +15,10 @@ exports.push([module.i, "/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, 
 
 /***/ }),
 
-/***/ 144:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -30,13 +30,29 @@ exports.push([module.i, "/* Based on Sublime Text's Monokai theme */\n\n.cm-s-mo
 
 /***/ }),
 
-/***/ 145:
+/***/ 153:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
-exports.i(__webpack_require__(143), "");
-exports.i(__webpack_require__(144), "");
+
+
+// module
+exports.push([module.i, ".gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n.gu-hide {\n  display: none !important;\n}\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+exports.i(__webpack_require__(151), "");
+exports.i(__webpack_require__(152), "");
+exports.i(__webpack_require__(153), "");
 
 // module
 exports.push([module.i, "app-code-editor {\n    width: 50%;\n}\napp-ui-editor {\n    margin-right: 20px;\n    width: 40%;\n    height: 90vh;\n    overflow-y: scroll; \n    float: left;\n    background-color: #999;\n    padding: 20px;\n}\nadd-block-form {\n    width: 50%;\n    padding: 10px;\n    margin: 0 auto;\n    margin-bottom: 10px;\n    text-align: center;\n}\n.CodeMirror {\n    height: 90vh;\n}\n.types-form ,\n.blockType {\n    background-color: #ccc;\n    border: 1px solid #666;\n    width: 50%;\n    padding: 10px;\n    margin: 0 auto;\n    margin-bottom: 10px;\n}\n.blockType h2 {\n    display: inline;\n}\n.blockType a {\n    float: right;\n} \n.blockType input[type=\"text\"],\n.blockType textarea {\n    display: block;\n    width: 90%;\n}\n.blockType label {\n    display: block;\n}\n.blockType textarea {\n    resize: none;\n}", ""]);
@@ -46,7 +62,7 @@ exports.push([module.i, "app-code-editor {\n    width: 50%;\n}\napp-ui-editor {\
 
 /***/ }),
 
-/***/ 184:
+/***/ 198:
 /***/ (function(module, exports) {
 
 /*
@@ -299,15 +315,15 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 188:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(76);
+module.exports = __webpack_require__(79);
 
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /***/ (function(module, exports) {
 
 /*
@@ -364,16 +380,16 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 76:
+/***/ 79:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(145);
+var content = __webpack_require__(154);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(184)(content, {});
+var update = __webpack_require__(198)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -391,5 +407,5 @@ if(false) {
 
 /***/ })
 
-},[188]);
+},[203]);
 //# sourceMappingURL=styles.bundle.js.map
